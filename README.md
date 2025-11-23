@@ -1,6 +1,10 @@
 # UTS Mobile Programming – SweetBite Bakery Cart App
 
 Repository ini berisi project UTS mata kuliah Mobile Programming.
+Nama : Nazwa Khoerunnisa
+NIM 23552011093
+Kelas : TIF RP 23 CNS A
+
 Aplikasi dibuat menggunakan Flutter dengan state management Cubit, sesuai ketentuan soal UTS.
 
 
@@ -10,23 +14,23 @@ Cubit dan Bloc sama-sama bagian dari flutter_bloc, tetapi punya cara kerja berbe
 
 Cubit
 
-Mengelola state secara sederhana.
+- Mengelola state secara sederhana.
 
-Hanya memiliki satu arah perubahan state: memanggil emit().
+- Hanya memiliki satu arah perubahan state: memanggil emit().
 
-Cocok untuk aplikasi kecil–menengah dan fitur yang tidak kompleks.
+- Cocok untuk aplikasi kecil–menengah dan fitur yang tidak kompleks.
 
-Kodenya lebih singkat dan mudah dipahami.
+- Kodenya lebih singkat dan mudah dipahami.
 
 Bloc
 
-Menggunakan event dan state (lebih kompleks).
+- Menggunakan event dan state (lebih kompleks).
 
-Setiap perubahan state harus melalui event, sehingga arus data lebih terstruktur.
+- Setiap perubahan state harus melalui event, sehingga arus data lebih terstruktur.
 
-Cocok untuk aplikasi besar atau sistem yang membutuhkan kontrol ketat terhadap alur data.
+- Cocok untuk aplikasi besar atau sistem yang membutuhkan kontrol ketat terhadap alur data.
 
-Lebih verbose, tetapi sangat kuat untuk kasus kompleks.
+- Lebih verbose, tetapi sangat kuat untuk kasus kompleks.
 
 Kesimpulan:
 Cubit = lebih sederhana dan cepat.
@@ -59,21 +63,21 @@ Walaupun CartCubit menggunakan List Map sebagai state, di dalam prosesnya terdap
 
 1. State: Keranjang Kosong
 
-Berarti belum ada produk ditambahkan.
+- Berarti belum ada produk ditambahkan.
 
-Digunakan untuk menampilkan UI seperti “Keranjang kosong”.
+- Digunakan untuk menampilkan UI seperti “Keranjang kosong”.
 
 2. State: Produk Ditambahkan
 
-Terjadi ketika user menekan tombol Tambah.
+- Terjadi ketika user menekan tombol Tambah.
 
-State berubah, jumlah item bertambah, dan UI langsung update.
+- State berubah, jumlah item bertambah, dan UI langsung update.
 
 3. State: Jumlah Produk Berubah
 
-Terjadi ketika kuantitas diperbarui (misalnya fitur + / −).
+- Terjadi ketika kuantitas diperbarui (misalnya fitur + / −).
 
-Total item dan total harga ikut berubah real-time.
+- Total item dan total harga ikut berubah real-time.
 
 4. (Opsional) State: Checkout
 
