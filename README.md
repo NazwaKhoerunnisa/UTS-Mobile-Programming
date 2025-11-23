@@ -2,7 +2,9 @@
 
 Repository ini berisi project UTS mata kuliah Mobile Programming.
 Nama : Nazwa Khoerunnisa
+
 NIM 23552011093
+
 Kelas : TIF RP 23 CNS A
 
 Aplikasi dibuat menggunakan Flutter dengan state management Cubit, sesuai ketentuan soal UTS.
